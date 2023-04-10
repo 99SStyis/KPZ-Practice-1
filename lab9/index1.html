@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Список завдань</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<style>
+		body {
+			background-color: #f2f2f2;
+			font-family: Arial, sans-serif;
+		}
+		.container {
+			margin-top: 30px;
+		}
+		h1 {
+			margin-bottom: 30px;
+			color: #007bff;
+			text-align: center;
+		}
+		.table td,
+		.table th {
+			vertical-align: middle;
+		}
+		.table .index-col {
+			width: 10%;
+			font-weight: bold;
+			color: #868e96;
+		}
+		.table .name-col {
+			width: 40%;
+			color: #343a40;
+		}
+		.table .date-col,
+		.table .time-col,
+		.table .priority-col {
+			width: 16.6%;
+			color: #343a40;
+		}
+		.table .btn {
+			margin-top: 10px;
+		}
+	</style>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<a class="navbar-brand" href="#">Список завдань</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNav">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="#">Головна сторінка</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<div class="container">
+		<h1>Список завдань</h1>
+		<table class="table table-bordered">
+			<thead>
+				<tr>
+					<th class="index-col">#</th>
+					<th class="name-col">Назва</th>
+					<th class="date-col">Дата</th>
+					<th class="time-col">Час</th>
+					<th class="priority-col">Пріоритет</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="index-col">1</td>
+					<td class="name-col">Прибрати в кімнаті</td>
+					<td class="date-col">10.04.2023</td>
+					<td class="time-col">15:00</td>
+					<td class="priority-col">Низький</td>
+				</tr>
+				<tr>
+					<td class="index-col">2</td>
+					<td class="name-col">Приготувати обід</td>
+					<td class="date-col">11.04.2023</td>
+					<td class="time-col">13:00</td>
+					<td class="priority-col">Середній</td>
+				</tr>
+				<tr>
+					<td class="index-col">3</td>
+					<td class="name-col">Підготувати звіт</td>
+					<td class="date-col">12.04.2023</td>
+					<td class="time-col">10:00</td>
+					<td class="priority-col">Високий</td>
+				</tr>
+			</tbody>
+		</table>
+		<a href="#" class="btn btn-primary">Створити завдання</a>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>
